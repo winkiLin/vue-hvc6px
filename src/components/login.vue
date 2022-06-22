@@ -1,10 +1,10 @@
 <template>
-  <div id="login">这是测试页面</div>
+  <div id="login">页面</div>
 </template>
 
 <script>
 export default {
-  name: 'App',
+  name: 'Login',
   components: {},
 };
 </script>
