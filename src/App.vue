@@ -1,18 +1,18 @@
 <template>
   <div id="app">
     <!-- <img alt="Vue logo" src="https://vuejs.org/images/logo.png"> -->
-    <Login />
+    <Index />
   </div>
 </template>
 
 <script>
-import Login from './components/login.vue';
+import Index from './components/index.vue';
 
 export default {
   name: 'App',
 
   components: {
-    Login,
+    Index,
   },
 };
 </script>
@@ -27,6 +27,5 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #d7d7d7;
-  margin-top: 60px;
 }
 </style>
