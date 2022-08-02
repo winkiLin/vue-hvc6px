@@ -1,26 +1,32 @@
 <template>
   <div id="index">
-    <div class="part">
-      <a href="https://stackblitz.com/">
-        <img
-          src="https://avatars.githubusercontent.com/u/28103559?s=160&v=4"
-          alt="logo"
-        />
-      </a>
-    </div>
+    <p v-for="(value, key) in item" :key="key">{{ value }}</p>
+    <button @click="addNew">添加新的属性</button>
   </div>
 </template>
 
 <script>
 export default {
   name: 'index',
+  data() {
+    return {
+      item: {
+        oldProperty: '旧的属性',
+      },
+    };
+  },
+  methods: {
+    addNew() {
+      this.item.newProperty = '新的属性';
+      console.log(this.item, '查看');
+    },
+  },
   components: {},
 };
 </script>
 
 <style lang="css" scoped>
 #index {
-  border: 1px solid red;
   min-height: 100vh;
   padding: 20px;
 }
